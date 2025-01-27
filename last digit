@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	int x;
+	printf("Enter any integer");
+	scanf("%d",&x);
+	x=x-(x/10)*10;
+	printf("The last digit of the number is""%d",x);
+	return 0;
+}
