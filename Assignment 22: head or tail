@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	char a;
+	printf("Enter H or T\n");
+	scanf("%c",&a);
+	if(a=='H')
+	printf("Head");
+	else if(a=='T')
+	printf("Tail");
+	return 0;
+}
