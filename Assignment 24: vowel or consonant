@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	char p;
+	printf("enter any character");
+	scanf("%c",&p);
+	if(p=='a')
+	printf("its a vowel");
+	else if(p=='e')
+		printf("its a vowel");
+		else if(p=='i')
+			printf("its a vowel");
+			else if(p=='o')
+				printf("its a vowel");
+				else if(p=='u')
+					printf("its a vowel");
+					else
+						printf("its a consonant");
+						return 0;
+}
