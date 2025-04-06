@@ -1,0 +1,29 @@
+#include <stdio.h>
+int callByValue(int a) {
+    a = a + 10;
+    printf("Inside callByValue function: %d\n", a);
+    return a;
+}
+
+int callByReference(int *b) {
+    *b = *b + 10;
+    printf("Inside callByReference function: %d\n", *b);
+    return *b;
+}
+
+int main() {
+    int x, y;
+    printf("Enter a value for x: ");
+    scanf("%d", &x);
+
+    printf("Enter a value for y: ");
+    scanf("%d", &y);
+    printf("Before callByValue function: %d\n", x);
+    x = callByValue(x);
+    printf("After callByValue function: %d\n", x);
+    printf("Before callByReference function: %d\n", y);
+    callByReference(&y);
+    printf("After callByReference function: %d\n", y);
+
+    return 0;
+}
